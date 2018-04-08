@@ -23,8 +23,8 @@ public class HelloWorldProcess {
 	 * 	系统配置表act_ge_property发生变化->产生下一个主键id值
 	 * 
 	 * 启动流程实例涉及到的表：
-	 * 	流程实例运行时执行对象表act_ru_execution发生变化
-	 * 	流程实例运行时身份联系表act_ru_identitylink发生变化
+	 * 	流程实例运行时执行对象表act_ru_execution发生变化，每到流程的新节点，执行对象数据就会指向那个节点
+	 * 	流程实例运行时身份联系表act_ru_identitylink发生变化，每到流程的新节点，身份联系表就会增加一条该节点联系人的数据
 	 *  流程实例运行时用户任务表act_ru_task发生变化
 	 *  活动节点历史表act_hi_actinst发生变化
 	 *  身份联系表  历史 act_hi_identitylink发生变化
